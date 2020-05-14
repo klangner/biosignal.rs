@@ -3,7 +3,7 @@ name = "biosignals"
 version = "0.1.0"
 authors = ["Krzysztof Langner <klangner@gmail.com>"]
 edition = "2018"
-description = "Biosignal processing library"
+description = "Biosignal processing demo app"
 keywords = ["biosignal"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/klangner/biosignals.rs"
@@ -13,7 +13,9 @@ readme = "README.md"
 
 
 [dependencies]
-finite-signals= { path = "../finite-signals.rs" }
+dsp = { path = "../dsp.rs" }
+wfdb-rust = "0.3"
+
 
 [dev-dependencies]
 assert_approx_eq = "1.1.0"

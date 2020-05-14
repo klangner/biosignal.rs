@@ -12,6 +12,12 @@ If you think that this library can help you, then let me know. We can discuss fu
 
 The folder [examples](https://github.com/klangner/biosignals.rs/tree/master/examples) contains demo programs which shows how to use this library.
 
+## Running examples
+
+Before running examples please download sample datasets:
+```
+wget -r -N -c -np https://physionet.org/files/qtdb/1.0.0/
+```
 
 # License
 
