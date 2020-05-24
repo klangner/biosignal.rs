@@ -5,6 +5,6 @@ authors = ["klangner <klangner@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-dsp = { path = "../dsp.rs" }
+dsp = "0.7.1"
 matfile = "0.2"
 
