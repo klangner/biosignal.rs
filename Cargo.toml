@@ -1,10 +1,10 @@
 [package]
-name = "applied-signal-processing-ex3"
+name = "biosignals"
 version = "0.1.0"
 authors = ["klangner <klangner@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-dsp = { path = "../../dsp.rs" }
+dsp = { path = "../dsp.rs" }
 matfile = "0.2"
 

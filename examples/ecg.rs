@@ -18,7 +18,7 @@ fn read_data(fname: &str, array_name: &str, sample_rate: usize) -> io::Result<Si
 
 
 fn main() {
-    let fname = "data/ecg.mat";
+    let fname = "examples/data/ecg.mat";
     let signal = read_data(fname, "ecg", 500).unwrap();
     println!("Length: {:?}", signal.len());
 }
