@@ -1,16 +1,15 @@
 [package]
-name = "biosignals"
+name = "biosignal"
 version = "0.1.0"
 authors = ["Krzysztof Langner <klangner@gmail.com>"]
-description = "Library for processing biological signal"
+description = "Library for processing biological signals"
 keywords = ["dsp", "signal"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/klangner/biosignals.rs"
-homepage = "https://github.com/klangner/biosignals.rs"
-documentation = "https://docs.rs/biosignals.rs"
+repository = "https://github.com/klangner/biosignal.rs"
+homepage = "https://github.com/klangner/biosignal.rs"
+documentation = "https://docs.rs/biosignal.rs"
 edition = "2018"
 
 [dependencies]
-dsp = "0.7.1"
 matfile = "0.2"
 
