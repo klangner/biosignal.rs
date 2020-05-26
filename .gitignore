@@ -1,8 +1,7 @@
 target/
 **/*.rs.bk
-.idea/
-*.iml
 *.lock
 data/
+output/
 venv/
 .ipynb_checkpoints/

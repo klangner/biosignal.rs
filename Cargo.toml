@@ -11,5 +11,10 @@ documentation = "https://docs.rs/biosignal.rs"
 edition = "2018"
 
 [dependencies]
+dsp = "0.7"
 matfile = "0.2"
 
+[dev-dependencies]
+assert_approx_eq = "1.1.0"
+gnuplot = "0.0.36"
+clap = "2"

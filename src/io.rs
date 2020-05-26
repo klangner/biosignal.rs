@@ -1,6 +1,6 @@
 use std::fs::File;
 use matfile;
-use crate::Signal;
+use dsp::Signal;
 use crate::error::{Error, ErrorKind, Result};
 
 
@@ -10,7 +10,8 @@ pub fn read_mat(fname: &str, array_name: &str, sample_rate: usize) -> Result<Sig
     let mat_file = matfile::MatFile::parse(file).unwrap();
     let array = mat_file.find_by_name(array_name).unwrap();
     if let matfile::NumericData::Double { real, imag: None} = array.data() {
-        Ok(Signal::new(real.to_owned(), sample_rate))
+        let data = real.iter().map(|&v| v as f32).collect();
+        Ok(Signal::new(data, sample_rate))
     } else {
         Err(Error::new(ErrorKind::NoData(array_name.to_owned())))
     }
