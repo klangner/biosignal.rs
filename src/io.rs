@@ -1,6 +1,6 @@
 use std::fs::File;
 use matfile;
-use dsp::Signal;
+use dsp::signal::Signal;
 use crate::error::{Error, ErrorKind, Result};
 
 
