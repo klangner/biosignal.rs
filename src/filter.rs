@@ -17,6 +17,7 @@ pub fn filter(signal: &Signal, start_freq: f32, end_freq: f32) -> Signal {
         }
     }
     let filtered_spectrum = Spectrum::new(output, spectrum.sample_rate);
-    let output_signal = ift.process(&filtered_spectrum);
+    let filtered_signal = ift.process(&filtered_spectrum);
+    let output_signal = filtered_signal.rescale(1f32 / filtered_signal.len() as f32);
     output_signal
 }
